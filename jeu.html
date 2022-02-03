@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Page de présentation de mon projet Shoot'em Up.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot'em Up - Jules Mesnil</title>
+</head>
+
+<body>
+    <nav class="container-tab">
+        <div class="nav-menu" id="nav_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./index.html#home" class="nav-link-tab active-link" id="tab_link1">
+                        <ion-icon name="home" class="nav-item-icon" id="tab_icon1"></ion-icon>
+                        <span class="nav-name">Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#projects" class="nav-link-tab" id="tab_link2">
+                        <ion-icon name="briefcase-outline" class="nav-item-icon" id="tab_icon2"></ion-icon>
+                        <span class="nav-name">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link-tab" id="tab_link3">
+                        <ion-icon name="person-outline" class="nav-item-icon" id="tab_icon3"></ion-icon>
+                        <span class="nav-name">A propos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile1" id="mobile_1">
+        <div class="haut">
+            <video src="./videos/JeuD3_Trim2.mp4" autoplay muted loop></video>
+            <div class="text-mobile jeu-mobile">
+                Shoot'em<br /> <span class="mesnil-mobile">Up</span>
+                <span class="desc-type-mobile">Mini jeu | Site web</span>
+                <a href="https://shoot-em-up.julesmesnil.fr" target="_blank" rel="noopener"
+                    class="work-btn btn-mobile">Découvrir le jeu</a>
+            </div>
+            <a href="./index.html#projects" class="logo-details-mobile">
+                <i class='bx bx-x' id="btn_close"></i>
+            </a>
+        </div>
+        <div class="mobile-text">
+            <p class="text-desc-mobile">
+                Dans le cadre de ma formation en MMI, j'ai été amené à réaliser un mini jeu à l'aide de la
+                librairie javascript D3.js. Nous devions créer un jeu du type "Shoot'em Up" dont le but est
+                de gagner le plus de points possible avec un nombre limité de vies.
+            </p>
+            <p class="text-desc-mobile"> <br>
+                Grâce à ce projet, j'ai pu découvrir et acquérir des compétences en programmation par objet (POO). J'ai
+                réalisé ce jeu en binôme avec <a href='http://merwan-jaudally.fr' target='_blank' rel='noopener'
+                    class='link-jeu'>Merwan Jaudally</a> pour lequel nous nous sommes répartis les tâches équitablement.
+            </p>
+            <div class="text-skills-mobile">
+                <div class="skills-software-mobile">
+                    <h3 class="title-skills-mobile">Compétences</h3>
+                    <p class="skills-mobile">HTML, CSS, JS</p>
+                    <p class="skills-mobile">D3.js</p>
+                </div>
+                <div class="skills-language-mobile">
+                    <h3 class="title-skills-mobile">Logiciel</h3>
+                    <p class="skills-mobile">Figma</p>
+                </div>
+            </div>
+            <div class="text-bottom-mobile">
+                <p class="text-date-mobile">31.12.21</p>
+                <!-- <a href="#" class="work-btn work-btn-blur">Voir le CV</a>
+                    <video src="./videos/cv_video_cut.mp4" class="right-video" autoplay muted loop></video> -->
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

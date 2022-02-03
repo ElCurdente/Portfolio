@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Page de présentation de mon projet Hex#words.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex#words - Jules Mesnil</title>
+</head>
+
+<body>
+    <nav class="container-tab">
+        <div class="nav-menu" id="nav_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./index.html#home" class="nav-link-tab active-link" id="tab_link1">
+                        <ion-icon name="home" class="nav-item-icon" id="tab_icon1"></ion-icon>
+                        <span class="nav-name">Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#projects" class="nav-link-tab" id="tab_link2">
+                        <ion-icon name="briefcase-outline" class="nav-item-icon" id="tab_icon2"></ion-icon>
+                        <span class="nav-name">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link-tab" id="tab_link3">
+                        <ion-icon name="person-outline" class="nav-item-icon" id="tab_icon3"></ion-icon>
+                        <span class="nav-name">A propos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile1" id="mobile_1">
+        <div class="haut">
+            <video src="./videos/hewwords_cut.mp4" autoplay muted loop></video>
+            <div class="text-mobile">
+                Hex#<br /> <span class="mesnil-mobile">words</span>
+                <span class="desc-type-mobile">Site web</span>
+                <a href="https://hexword.julesmesnil.fr" target="_blank" rel="noopener" class="work-btn btn-mobile">Voir
+                    le site</a>
+            </div>
+            <a href="./index.html#projects" class="logo-details-mobile">
+                <i class='bx bx-x' id="btn_close"></i>
+            </a>
+        </div>
+        <div class="mobile-text">
+            <p class="text-desc-mobile">
+                Créez une ou plusieurs pages web qui présenteront le code hexadécimal choisi parmi ceux
+                disponibles sur le site <a href="https://c0ffee.surge.sh" target="_blank" rel="noopener"
+                    class="link_ice">c0ffe.surge</a>, tel est le concept de ce projet. <br> Le site web devait
+                être responsive, développé en mobile first et
+                compatible avec les principaux navigateurs.
+            </p>
+            <p class="text-desc-mobile"> <br>
+                J'ai donc choisi le mot Ice associé au code hexadécimal #1CE dans le but de sensibiliser les
+                utilisateurs à la fonte des glaces et ses conséquences. Pour ce faire, j'ai choisi de rediriger
+                l'utilisateur vers différents articles disponibles sur le site <a
+                    href='https://www.nationalgeographic.fr' target='_blank' rel='noopener' class='link_ice'>National
+                    Geographic</a>.
+            </p>
+            <div class="text-skills-mobile">
+                <div class="skills-software-mobile">
+                    <h3 class="title-skills-mobile">Compétences</h3>
+                    <p class="skills-mobile">HTML, CSS, JS</p>
+                </div>
+                <div class="skills-language-mobile">
+                    <h3 class="title-skills-mobile">Langage</h3>
+                    <p class="skills-mobile">Anglais</p>
+                </div>
+            </div>
+            <div class="text-bottom-mobile">
+                <p class="text-date-mobile">31.12.21</p>
+                <!-- <a href="#" class="work-btn work-btn-blur">Voir le CV</a>
+                    <video src="./videos/cv_video_cut.mp4" class="right-video" autoplay muted loop></video> -->
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

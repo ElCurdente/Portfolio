@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Page de présentation de mon projet Mini Blog.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog - Jules Mesnil</title>
+</head>
+
+<body>
+    <nav class="container-tab">
+        <div class="nav-menu" id="nav_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./index.html#home" class="nav-link-tab active-link" id="tab_link1">
+                        <ion-icon name="home" class="nav-item-icon" id="tab_icon1"></ion-icon>
+                        <span class="nav-name">Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#projects" class="nav-link-tab" id="tab_link2">
+                        <ion-icon name="briefcase-outline" class="nav-item-icon" id="tab_icon2"></ion-icon>
+                        <span class="nav-name">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link-tab" id="tab_link3">
+                        <ion-icon name="person-outline" class="nav-item-icon" id="tab_icon3"></ion-icon>
+                        <span class="nav-name">A propos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile1" id="mobile_1">
+        <div class="haut">
+            <video src="./videos/miniblog.mp4" autoplay muted loop></video>
+            <div class="text-mobile">
+                Mini<br /> <span class="mesnil-mobile">Blog</span>
+                <span class="desc-type-mobile">Site web</span>
+                <a href="https://miniblog.julesmesnil.fr" target="_blank" rel="noopener"
+                    class="work-btn btn-mobile">Voir le site</a>
+            </div>
+            <a href="./index.html#projects" class="logo-details-mobile">
+                <i class='bx bx-x' id="btn_close"></i>
+            </a>
+        </div>
+        <div class="mobile-text">
+            <p class="text-desc-mobile">
+                L'objectif de ce projet était de mélanger l'ensemble des notions vues en cours comme
+                l'intéraction avec une base de données, le modèle CRUD, la gestion de sessions ou encore le
+                contrôle d'accès. J'ai créé ce blog avec <a href='http://chloe-montoya.fr' target='_blank'
+                    rel='noopener' class='link-blog'>Chloé Montoya</a> qui s'est chargée d'une partie du
+                développement front-end du site.
+            </p>
+            <p class="text-desc-mobile"> <br>
+                Pour ma part, je suis occupé d'une autre partie du développement front-end ainsi que de toute la partie
+                PHP et MYSQL.
+            </p>
+            <div class="text-skills-mobile">
+                <div class="skills-software-mobile">
+                    <h3 class="title-skills-mobile">Compétences</h3>
+                    <p class="skills-mobile">HTML, CSS, JS</p>
+                    <p class="skills-mobile">PHP, MySQL</p>
+                </div>
+                <div class="skills-language-mobile">
+                    <h3 class="title-skills-mobile">Logiciel</h3>
+                    <p class="skills-mobile">Figma</p>
+                </div>
+            </div>
+            <div class="text-bottom-mobile">
+                <p class="text-date-mobile">31.12.21</p>
+                <!-- <a href="#" class="work-btn work-btn-blur">Voir le CV</a>
+                    <video src="./videos/cv_video_cut.mp4" class="right-video" autoplay muted loop></video> -->
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

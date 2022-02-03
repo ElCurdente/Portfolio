@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Bonjour ! Je suis Jules Mesnil, un jeune développeur front-end passionné. Vous pouvez découvrir dans mon portfolio quelques-uns de mes projets !">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="responsive.css" as="style">
+    <link rel="preload" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/jpg" href="./images/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Mesnil - Portfolio</title>
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo bleu">Jules</span><span class="logo jaune">Mesnil</span>
+        </h1>
+    </div>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-menu burger-btn' id="btn"></i>
+        </div>
+        <div class="div-titre-rotate">
+            <h3 class="titre-rotate">Portfolio</h3>
+        </div>
+        <ul class="nav-list">
+
+            <li class="social">
+                <a href="https://github.com/ElCurdente" rel="noopener" target="_blank">
+                    <i class='bx bxl-github'></i>
+                    <!-- <span class="links_name">GitHub</span> -->
+                </a>
+                <span class="modal-hover">GitHub</span>
+            </li>
+            <li class="social social-end">
+                <a href="https://www.linkedin.com/in/jules-mesnil/" target="_blank" rel="noopener">
+                    <i class='bx bxl-linkedin'></i>
+                    <!-- <span class="links_name">Linkedin</span> -->
+                </a>
+                <span class="modal-hover">Linkedin</span>
+            </li>
+        </ul>
+    </div>
+    <nav class="container-tab">
+        <div class="nav-menu" id="nav_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link-tab active-link" id="tab_link1">
+                        <ion-icon name="home" class="nav-item-icon" id="tab_icon1"></ion-icon>
+                        <span class="nav-name">Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link-tab" id="tab_link2">
+                        <ion-icon name="briefcase-outline" class="nav-item-icon" id="tab_icon2"></ion-icon>
+                        <span class="nav-name">Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link-tab" id="tab_link3">
+                        <ion-icon name="person-outline" class="nav-item-icon" id="tab_icon3"></ion-icon>
+                        <span class="nav-name">A propos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu-section">
+        <img src="./images/logo_jules_white.svg" class="logo-jules-menu" id="logo_menu" alt="">
+        <nav class="navbar">
+            <h1><a href="#home" rel="noopener" class="nav-link"
+                    id="nav-link-1"><span>A</span><span>c</span><span>c</span><span>u</span><span>e</span><span>i</span><span>l</span></a>
+            </h1>
+            <h1><a href="#projects" rel="noopener"
+                    class="nav-link nav-link-2"><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>t</span><span>s</span></a>
+            </h1>
+            <h1><a href="#about" rel="noopener" class="nav-link nav-link-3"><span>À</span>
+                    <span>p</span><span>r</span><span>o</span><span>p</span><span>o</span><span>s</span></a>
+            </h1>
+        </nav>
+        <div class="infos-menu">
+            <div class="latest-work">
+                <h2>Derniers projets</h2>
+                <div class="latest-work-1">
+                    <img src="./images/wallpaper.jpg" alt="">
+                    <div class="latest-work-1-infos">
+                        <p class="date">21.03.21</p>
+                        <p class="title-latest-work">Projet BENEF</p>
+                        <a href="#" class="link-latest-work"><span>V</span><span>o</span><span>i</span><span>r</span>
+                            <span>p</span><span>l</span><span>u</span><span>s</span></a>
+                    </div>
+
+                </div>
+                <div class="latest-work-2">
+                    <video src="./videos/MESNIL_Jules_Trim.mp4" autoplay muted loop></video>
+                    <div class="latest-work-2-infos">
+                        <p class="date">21.03.21</p>
+                        <p class="title-latest-work">Projet Motion Design</p>
+                        <a href="#" class="link-latest-work"><span>V</span><span>o</span><span>i</span><span>r</span>
+                            <span>p</span><span>l</span><span>u</span><span>s</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="language">
+            <div class="div-fr">
+                <a href="#"
+                    class="fr"><span>F</span><span>r</span><span>a</span><span>n</span><span>ç</span><span>a</span><span>i</span><span>s</span></a>
+            </div>
+            <div class="div-en"><a href="#"
+                    class="en"><span>E</span><span>n</span><span>g</span><span>l</span><span>i</span><span>s</span><span>h</span></a>
+            </div>
+        </div> -->
+    </section>
+    <section class="home-section" id="home">
+        <a href="#home"><img src="./images/logo_jules_white.svg" class="logo-jules" id="logo_home" alt=""></a>
+        <a href="https://www.linkedin.com/in/jules-mesnil/" target="_blank" rel="noopener" name="linkedin-moi"><img
+                src="./images/moi.png" class="moi" alt="Photo Jules Mesnil"></a>
+        <div class="text">
+            Jules <br /> <span class="mesnil">Mesnil</span>
+            <span class="fed">Développeur Front-end</span>
+        </div>
+        <a href="#projects" class="work-btn work-btn-home">Projets</a>
+        <a href="mailto:jules-mesnil@gmail.com" class="work-btn work-btn-home2">Me contacter</a>
+
+    </section>
+    <section class="projects-section" id="projects">
+        <div class="container-works" id="container_works">
+            <div class="projects-box pj-1 pjbx" id="p2">
+                <img src="./images/wallpaper.jpg" alt=""></img>
+                <p class="project-type"><span>W</span><span>e</span><span>b</span>
+                    <span>A</span><span>p</span><span>p</span></p>
+                <h2 class="project-title"><span>B</span><span>e</span><span>n</span><span>e</span><span>f</span>
+                    <span>(</span><span>e</span><span>n</span>
+                    <span>c</span><span>o</span><span>u</span><span>r</span><span>s</span><span>)</span></h2>
+                <p class="project-skills">
+                    <span>r</span><span>e</span><span>a</span><span>c</span><span>t</span>
+                    <span>j</span><span>s</span>
+                    |
+                    <span>T</span><span>a</span><span>i</span><span>l</span><span>w</span><span>i</span><span>n</span><span>d</span>
+                    <span>C</span><span>s</span><span>s</span>
+                </p>
+                <p class="project-skills"> <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                    <span>c</span><span>s</span><span>s</span><span>,</span>
+                    <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                    <span>p</span><span>h</span><span>p</span><span>,</span>
+                    <span>m</span><span>y</span><span>s</span><span>q</span><span>l</span>
+                </p>
+            </div>
+            <a href="./benef.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p2">
+                    <img src="./images/wallpaper.jpg" alt=""></img>
+                    <p class="project-type"><span>W</span><span>e</span><span>b</span>
+                        <span>A</span><span>p</span><span>p</span></p>
+                    <h2 class="project-title"><span>B</span><span>e</span><span>n</span><span>e</span><span>f</span>
+                        <span>(</span><span>e</span><span>n</span>
+                        <span>c</span><span>o</span><span>u</span><span>r</span><span>s</span><span>)</span></h2>
+                    <p class="project-skills">
+                        <span>r</span><span>e</span><span>a</span><span>c</span><span>t</span>
+                        <span>j</span><span>s</span>
+                        |
+                        <span>T</span><span>a</span><span>i</span><span>l</span><span>w</span><span>i</span><span>n</span><span>d</span>
+                        <span>C</span><span>s</span><span>s</span>
+                    </p>
+                    <p class="project-skills"> <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                        <span>c</span><span>s</span><span>s</span><span>,</span>
+                        <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                        <span>p</span><span>h</span><span>p</span><span>,</span>
+                        <span>m</span><span>y</span><span>s</span><span>q</span><span>l</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p4">
+                <video src="./videos/hewwords_cut.mp4" autoplay muted loop></video>
+                <p class="project-type"><span>S</span><span>i</span><span>t</span><span>e</span>
+                    <span>w</span><span>e</span><span>b</span></p>
+                <h2 class="project-title">
+                    <span>h</span><span>e</span><span>x</span><span>#</span><span>w</span><span>o</span><span>r</span><span>d</span><span>s</span>
+                </h2>
+                <p class="project-skills"> <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                    <span>c</span><span>s</span><span>s</span><span>,</span>
+                    <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span>
+                </p>
+                <p class="project-skills">
+                    <span>F</span><span>i</span><span>g</span><span>m</span><span>a</span>
+                </p>
+            </div>
+            <a href="./hexwords.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p4">
+                    <video src="./videos/hewwords_cut.mp4" autoplay muted loop></video>
+                    <p class="project-type"><span>S</span><span>i</span><span>t</span><span>e</span>
+                        <span>w</span><span>e</span><span>b</span></p>
+                    <h2 class="project-title">
+                        <span>h</span><span>e</span><span>x</span><span>#</span><span>w</span><span>o</span><span>r</span><span>d</span><span>s</span>
+                    </h2>
+                    <p class="project-skills"> <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                        <span>c</span><span>s</span><span>s</span><span>,</span>
+                        <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span>
+                    </p>
+                    <p class="project-skills">
+                        <span>F</span><span>i</span><span>g</span><span>m</span><span>a</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p1">
+                <video src="./videos/CV VIDEO_Trim.mp4" autoplay muted loop></video>
+                <p class="project-type"><span>V</span><span>i</span><span>d</span><span>e</span><span>o</span></p>
+                <h2 class="project-title"><span>c</span><span>v</span>
+                    <span>v</span><span>i</span><span>d</span><span>e</span><span>o</span></h2>
+                <p class="project-skills">
+                    <span>P</span><span>r</span><span>e</span><span>m</span><span>i</span><span>è</span><span>r</span><span>e</span>
+                    <span>P</span><span>r</span><span>o</span> |
+                    <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                    <span>E</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                </p>
+            </div>
+            <a href="./cv_video.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p1">
+                    <video src="./videos/CV VIDEO_Trim.mp4" autoplay muted loop></video>
+                    <p class="project-type"><span>V</span><span>i</span><span>d</span><span>e</span><span>o</span></p>
+                    <h2 class="project-title"><span>c</span><span>v</span>
+                        <span>v</span><span>i</span><span>d</span><span>e</span><span>o</span></h2>
+                    <p class="project-skills">
+                        <span>P</span><span>r</span><span>e</span><span>m</span><span>i</span><span>è</span><span>r</span><span>e</span>
+                        <span>P</span><span>r</span><span>o</span> |
+                        <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                        <span>E</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p3">
+                <video src="./videos/MESNIL_Jules_Trim.mp4" autoplay muted loop></video>
+                <p class="project-type"><span>V</span><span>i</span><span>d</span><span>e</span><span>o</span></p>
+                <h2 class="project-title">
+                    <span>m</span><span>o</span><span>t</span><span>i</span><span>o</span><span>n</span>
+                    <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+                    <span>L</span><span>e</span><span>s</span><span>c</span><span>o</span><span>p</span></h2>
+                <p class="project-skills">
+                    <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                    <span>E</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                    |
+                    <span>I</span><span>l</span><span>l</span><span>u</span><span>s</span><span>t</span><span>r</span><span>a</span><span>t</span><span>o</span><span>r</span>
+                </p>
+            </div>
+            <a href="./motion.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p3">
+                    <video src="./videos/MESNIL_Jules_Trim.mp4" autoplay muted loop></video>
+                    <p class="project-type"><span>V</span><span>i</span><span>d</span><span>e</span><span>o</span></p>
+                    <h2 class="project-title">
+                        <span>m</span><span>o</span><span>t</span><span>i</span><span>o</span><span>n</span>
+                        <span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+                        <span>L</span><span>e</span><span>s</span><span>c</span><span>o</span><span>p</span></h2>
+                    <p class="project-skills">
+                        <span>A</span><span>f</span><span>t</span><span>e</span><span>r</span>
+                        <span>E</span><span>f</span><span>f</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                        |
+                        <span>I</span><span>l</span><span>l</span><span>u</span><span>s</span><span>t</span><span>r</span><span>a</span><span>t</span><span>o</span><span>r</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p5">
+                <video src="./videos/JeuD3_Trim.mp4" autoplay muted loop></video>
+                <p class="project-type"><span>m</span><span>i</span><span>n</span><span>i</span>
+                    <span>j</span><span>e</span><span>u</span> |
+                    <span>s</span><span>i</span><span>t</span><span>e</span>
+                    <span>w</span><span>e</span><span>b</span></p>
+                <h2 class="project-title"><span>J</span><span>e</span><span>u</span>
+                    <span>s</span><span>h</span><span>o</span><span>o</span><span>t</span><span>'</span><span>e</span><span>m</span>
+                    <span>u</span><span>p</span></h2>
+                <p class="project-skills">
+                    <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                    <span>c</span><span>s</span><span>s</span><span>,</span>
+                    <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                    <span>d</span><span>3</span><span>.</span><span>j</span><span>s</span>
+                </p>
+            </div>
+            <a href="./jeu.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p5">
+                    <video src="./videos/JeuD3_Trim.mp4" autoplay muted loop></video>
+                    <p class="project-type"><span>m</span><span>i</span><span>n</span><span>i</span>
+                        <span>j</span><span>e</span><span>u</span> |
+                        <span>s</span><span>i</span><span>t</span><span>e</span>
+                        <span>w</span><span>e</span><span>b</span></p>
+                    <h2 class="project-title"><span>J</span><span>e</span><span>u</span>
+                        <span>s</span><span>h</span><span>o</span><span>o</span><span>t</span><span>'</span><span>e</span><span>m</span>
+                        <span>u</span><span>p</span></h2>
+                    <p class="project-skills">
+                        <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                        <span>c</span><span>s</span><span>s</span><span>,</span>
+                        <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                        <span>d</span><span>3</span><span>.</span><span>j</span><span>s</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p6">
+                <video src="./videos/miniblog.mp4" autoplay muted loop class="video-miniblog"></video>
+                <p class="project-type"><span>s</span><span>i</span><span>t</span><span>e</span>
+                    <span>w</span><span>e</span><span>b</span></p>
+                <h2 class="project-title"><span>M</span><span>i</span><span>n</span><span>i</span>
+                    <span>b</span><span>l</span><span>o</span><span>g</span></h2>
+                <p class="project-skills">
+                    <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                    <span>c</span><span>s</span><span>s</span><span>,</span>
+                    <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                    <span>p</span><span>h</span><span>p</span><span>,</span>
+                    <span>m</span><span>y</span><span>s</span><span>q</span><span>l</span>
+                </p>
+            </div>
+            <a href="./miniblog.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p6">
+                    <video src="./videos/miniblog.mp4" autoplay muted loop class="video-miniblog"></video>
+                    <p class="project-type"><span>s</span><span>i</span><span>t</span><span>e</span>
+                        <span>w</span><span>e</span><span>b</span></p>
+                    <h2 class="project-title"><span>M</span><span>i</span><span>n</span><span>i</span>
+                        <span>b</span><span>l</span><span>o</span><span>g</span></h2>
+                    <p class="project-skills">
+                        <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                        <span>c</span><span>s</span><span>s</span><span>,</span>
+                        <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                        <span>p</span><span>h</span><span>p</span><span>,</span>
+                        <span>m</span><span>y</span><span>s</span><span>q</span><span>l</span>
+                    </p>
+                </div>
+            </a>
+            <div class="projects-box pj-1 pjbx" id="p7">
+                <video src="./videos/cv_inte2_Trim.mp4" autoplay muted loop class="video-miniblog"></video>
+                <p class="project-type"><span>s</span><span>i</span><span>t</span><span>e</span>
+                    <span>w</span><span>e</span><span>b</span></p>
+                <h2 class="project-title"><span>c</span><span>v</span>
+                    <span>i</span><span>n</span><span>t</span><span>e</span><span>r</span><span>a</span><span>c</span><span>t</span><span>i</span><span>f</span>
+                </h2>
+                <p class="project-skills">
+                    <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                    <span>c</span><span>s</span><span>s</span><span>,</span>
+                    <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                    <span>p</span><span>h</span><span>p</span>
+                </p>
+            </div>
+            <a href="./cv.html" class="link-ex-page">
+                <div class="projects-box pj-1" id="p7">
+                    <video src="./videos/cv_inte2_Trim.mp4" autoplay muted loop class="video-miniblog"></video>
+                    <p class="project-type"><span>s</span><span>i</span><span>t</span><span>e</span>
+                        <span>w</span><span>e</span><span>b</span></p>
+                    <h2 class="project-title"><span>c</span><span>v</span>
+                        <span>i</span><span>n</span><span>t</span><span>e</span><span>r</span><span>a</span><span>c</span><span>t</span><span>i</span><span>f</span>
+                    </h2>
+                    <p class="project-skills">
+                        <span>h</span><span>t</span><span>m</span><span>l</span><span>,</span>
+                        <span>c</span><span>s</span><span>s</span><span>,</span>
+                        <span>j</span><span>a</span><span>v</span><span>a</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>,</span>
+                        <span>p</span><span>h</span><span>p</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="container-desc-works">
+            <div class="project-desc" id="pd1">
+                <div class="left" id="l1">
+                    <video src="./videos/CV VIDEO_Trim.mp4" autoplay muted loop></video>
+                    <div class="text">
+                        CV <br /> <span class="mesnil">Video</span>
+                        <span class="desc-type">Video</span>
+                        <a href="https://youtu.be/E7tXSLbVvS0" target="_blank" rel="noopener" class="work-btn">Voir le
+                            CV</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r1">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc">
+                            Dans le cadre de ma formation en MMI, j'ai été amené à réaliser un CV au format vidéo. Ce
+                            projet m'a permis de découvrir l'écriture de scénario, d'apprendre à gérer l'organisation
+                            d'une production audiovisuelle et d'améliorer mes techniques de prise de vues mais aussi mon
+                            anglais.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Logiciels</h3>
+                                <p class="skills">Première Pro</p>
+                                <p class="skills">After Effects</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Langage</h3>
+                                <p class="skills">Anglais</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <p class="text-date">31.12.21</p>
+                            <a href="https://youtu.be/E7tXSLbVvS0" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le CV</a>
+                            <video src="./videos/cv_video_cut.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd2">
+                <div class="left benef" id="l2">
+                    <img src="./images/benef5.jpg" class="img-benef"></img>
+                    <div class="text black">
+                        BENEF
+                        <span class="desc-type">Web App</span>
+                        <a href="https://benef-app.fr" target="_blank" rel="noopener"
+                            class="work-btn work-btn-benef">Découvrir le projet</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r2">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc text-desc1" id="text_desc_2">
+                            BENEF est une web application proposant des bons plans pour tous sur différentes catégories
+                            comme des
+                            soirées ou des bons de réductions pour des activités, principalement pour les étudiants.
+                            Dans ce projet, j'occupe le rôle de développeur front-end.
+                        </p>
+                        <div class="text-skills-benef">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Compétences</h3>
+                                <p class="skills">React JS</p>
+                                <p class="skills">Tailwind CSS</p>
+                                <p class="skills">HTML, CSS, JS</p>
+                                <p class="skills">PHP, MySQL</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Méthodologie</h3>
+                                <p class="skills">Méthode Agile</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="sous-text-bottom">
+                                <p class="text-nb-p" id="nbp_benef">1-3</p>
+                                <div class="text-swipe">
+                                    <div class="swipe" id="swipe_left_btn1"><i class='bx bx-chevron-left'></i></div>
+                                    <div class="swipe" id="swipe_right_btn1"><i class='bx bx-chevron-right'></i></div>
+                                </div>
+                                <p class="text-date date-benef">En cours</p>
+                            </div>
+                            <a href="https://benef-app.fr" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Découvrir le projet</a>
+                            <video src="./videos/Benef_cut2.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd3">
+                <div class="left" id="l3">
+                    <video src="./videos/MESNIL_Jules_Trim.mp4" autoplay muted loop></video>
+                    <div class="text">
+                        Motion <br /> <span class="mesnil">Design</span>
+                        <span class="desc-type">Video</span>
+                        <a href="https://youtu.be/dG1YEOgZovw" target="_blank" rel="noopener" class="work-btn">Voir le
+                            Motion</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r3">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc">
+                            Dans le cadre de mon DUT MMI, j'ai été amené à réaliser un Motion Design. Le sujet
+                            était libre, j'ai donc choisi d'illustrer mon interprétation de la chanson "<a
+                                href="https://www.youtube.com/watch?v=Njpw2PVb1c0" target="_blank" rel="noopener"
+                                class="lescop">La forêt</a>" de
+                            Lescop. Ce projet m'a permis d'améliorer mes compétences en animation de décors et de
+                            personnages sur After Effects.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Logiciels</h3>
+                                <p class="skills">After Effects</p>
+                                <p class="skills">Illustrator</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Langage</h3>
+                                <p class="skills">Français</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <p class="text-date">28.12.21</p>
+                            <a href="https://youtu.be/dG1YEOgZovw" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le Motion</a>
+                            <video src="./videos/After_Effects_cut.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd4">
+                <div class="left" id="l4">
+                    <img src="./images/ice2.webp" class="ice" alt="">
+                    <div class="text text-ice">
+                        Hex#<span class="words">words</span>
+                        <span class="desc-type">Site web</span>
+                        <a href="https://hexword.julesmesnil.fr" target="_blank" rel="noopener" class="work-btn">Voir le
+                            projet</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r4">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc" id="text_desc_4">
+                            Créez une ou plusieurs pages web qui présenteront le code hexadécimal choisi parmi ceux
+                            disponibles sur le site <a href="https://c0ffee.surge.sh" target="_blank" rel="noopener"
+                                class="link_ice">c0ffe.surge</a>, tel est le concept de ce projet. Le site web devait
+                            être responsive, développé en mobile first et
+                            compatible avec les principaux navigateurs.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Compétences</h3>
+                                <p class="skills">HTML, CSS, JS</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Langage</h3>
+                                <p class="skills">Anglais</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="sous-text-bottom">
+                                <p class="text-nb-p" id="nbp_hex">1-2</p>
+                                <div class="text-swipe">
+                                    <div class="swipe" id="swipe_left_btn4"><i class='bx bx-chevron-left'></i></div>
+                                    <div class="swipe" id="swipe_right_btn4"><i class='bx bx-chevron-right'></i></div>
+                                </div>
+                                <p class="text-date date-benef">13.12.21</p>
+                            </div>
+                            <a href="https://hexword.julesmesnil.fr" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le projet</a>
+                            <video src="./videos/Ice_code_cut2.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd5">
+                <div class="left" id="l5">
+                    <video src="./videos/JeuD3_Trim2.mp4" autoplay muted loop></video>
+                    <div class="text">
+                        Mini Jeu <br /> <span class="mesnil">Shoot'em <span class="words">Up</span> </span>
+                        <span class="desc-type">Mini jeu | Site web</span>
+                        <a href="https://shoot-em-up.julesmesnil.fr" target="_blank" rel="noopener"
+                            class="work-btn">Voir le jeu</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r5">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc" id="text_desc_5">
+                            Dans le cadre de ma formation en MMI, j'ai été amené à réaliser un mini jeu à l'aide de la
+                            librairie javascript D3.js. Nous devions créer un jeu du type "Shoot'em Up" dont le but est
+                            de gagner le plus de points possible avec un nombre limité de vies.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Compétences</h3>
+                                <p class="skills">HTML, CSS, JS</p>
+                                <p class="skills">D3.js</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Logiciels</h3>
+                                <p class="skills">Figma</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="sous-text-bottom">
+                                <p class="text-nb-p" id="nbp_jeu">1-2</p>
+                                <div class="text-swipe">
+                                    <div class="swipe" id="swipe_left_btn5"><i class='bx bx-chevron-left'></i></div>
+                                    <div class="swipe" id="swipe_right_btn5"><i class='bx bx-chevron-right'></i></div>
+                                </div>
+                                <p class="text-date date-benef">17.12.21</p>
+                            </div>
+                            <a href="https://shoot-em-up.julesmesnil.fr" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le jeu</a>
+                            <video src="./videos/JeuD3code.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd6">
+                <div class="left left-blog" id="l6">
+                    <div class="text">
+                        Mini <span class="words">Blog</span>
+                        <span class="desc-type">Site web</span>
+                        <a href="https://miniblog.julesmesnil.fr" target="_blank" rel="noopener" class="work-btn">Voir
+                            le blog</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r6">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc" id="text_desc_6">
+                            L'objectif de ce projet était de mélanger l'ensemble des notions vues en cours comme
+                            l'intéraction avec une base de données, le modèle CRUD, la gestion de sessions ou encore le
+                            contrôle d'accès. J'ai créé ce blog avec <a href='http://chloe-montoya.fr' target='_blank'
+                                rel='noopener' class='link-blog'>Chloé Montoya</a> qui s'est chargée d'une partie du
+                            développement front-end du site.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Compétences</h3>
+                                <p class="skills">HTML, CSS, JS,</p>
+                                <p class="skills">PHP, MYSQL</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Logiciels</h3>
+                                <p class="skills">Figma</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="sous-text-bottom">
+                                <p class="text-nb-p" id="nbp_blog">1-2</p>
+                                <div class="text-swipe">
+                                    <div class="swipe" id="swipe_left_btn6"><i class='bx bx-chevron-left'></i></div>
+                                    <div class="swipe" id="swipe_right_btn6"><i class='bx bx-chevron-right'></i></div>
+                                </div>
+                                <p class="text-date date-benef">26.12.21</p>
+                            </div>
+                            <a href="https://miniblog.julesmesnil.fr" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le blog</a>
+                            <video src="./videos/miniblog_code_Trim.mp4" class="right-video" autoplay muted
+                                loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-desc" id="pd7">
+                <div class="left" id="l7">
+                    <video src="./videos/cv_inte_Trim.mp4" autoplay muted loop></video>
+                    <div class="text text-ice">
+                        CV <br /> <span class="mesnil">Interactif</span>
+                        <span class="desc-type">Site Web</span>
+                        <a href="https://cv.julesmesnil.fr" target="_blank" rel="noopener" class="work-btn">Voir le
+                            CV</a>
+                    </div>
+
+                </div>
+                <div class="right" id="r7">
+                    <div class="container-desc">
+                        <div class="logo-details">
+                            <i class='bx bx-x' id="btn_close"></i>
+                        </div>
+                        <p class="text-desc" id="text_desc_7">
+                            Ce CV interactif a été réalisé à la fin de ma première année en DUT MMI. J'ai ainsi pu
+                            mélanger et mettre en pratique l'ensemble des notions apprises durant l'année et notamment
+                            dans les langages de base comme HTML, CSS et Javascript.
+                        </p>
+                        <div class="text-skills margin-skills">
+                            <div class="skills-software">
+                                <h3 class="title-skills">Compétences</h3>
+                                <p class="skills">HTML, CSS, JS, PHP</p>
+                            </div>
+                            <div class="skills-language">
+                                <h3 class="title-skills">Logiciels</h3>
+                                <p class="skills">Figma</p>
+                            </div>
+                        </div>
+                        <div class="text-bottom">
+                            <div class="sous-text-bottom">
+                                <p class="text-nb-p" id="nbp_cv_inte">1-2</p>
+                                <div class="text-swipe">
+                                    <div class="swipe" id="swipe_left_btn7"><i class='bx bx-chevron-left'></i></div>
+                                    <div class="swipe" id="swipe_right_btn7"><i class='bx bx-chevron-right'></i></div>
+                                </div>
+                                <p class="text-date date-benef">06.06.21</p>
+                            </div>
+                            <a href="https://cv.julesmesnil.fr" target="_blank" rel="noopener"
+                                class="work-btn work-btn-blur">Voir le CV</a>
+                            <video src="./videos/cv_inte_code_Trim.mp4" class="right-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="about-section" id="about">
+        <div class="grid-about">
+            <h1 class="title-about">A propos</h1>
+            <div class="div-img-about">
+                <a href="./CV-2022.pdf" id="img_about" target="_blank" rel="noopener"><img src="./images/moi-about.jpg"
+                        alt="Photo Jules Mesnil" class="img-about" data-aos="fade" data-aos-offset="0"
+                        data-aos-delay="150" data-aos-duration="1000" data-aos-anchor=".title-about"
+                        data-aos-once="true"></a>
+                <a class="text-cv" href="./CV-2022.pdf" target="_blank" rel="noopener" id="text_cv">Cliquer pour voir
+                    mon CV</a>
+            </div>
+
+            <div class="presentation-moi" data-aos="fade" data-aos-offset="0" data-aos-delay="300"
+                data-aos-duration="1000" data-aos-anchor=".title-about" data-aos-once="true">
+                <h2 class="h2-about">Présentation</h2>
+                <p>Bonjour ! Je suis Jules Mesnil, un jeune développeur front-end passionné. Curieux et créatif, j'adore
+                    me lancer des défis pour réaliser des sites web proposant une réelle expérience interactive à
+                    l'utilisateur. (Cliquez sur la photo pour découvrir mon CV).</p>
+            </div>
+            <div class="presentation-formation" data-aos="fade" data-aos-offset="0" data-aos-delay="450"
+                data-aos-duration="1000" data-aos-anchor=".title-about" data-aos-once="true">
+                <h2 class="h2-about">Ma formation</h2>
+                <p>Je suis actuellement en deuxième année d'un DUT MMI (Métiers du Multimédia et de l'Internet). Au sein
+                    de cette formation très polyvalente, j'étudie le développement web (front-end et back-end),
+                    l'audiovisuel, le webdesign et la communication dans le but de devenir un développeur front-end à
+                    l'avenir. <br> Par ailleurs, je recherche actuellement un stage de 10 semaines minimum dans ce
+                    domaine pour le mois d'avril 2022.
+                </p>
+            </div>
+            <div class="me-contacter" data-aos="fade" data-aos-offset="0" data-aos-delay="600" data-aos-duration="1000"
+                data-aos-anchor=".title-about" data-aos-once="true">
+                <h2 class="h2-about">Me contacter</h2>
+                <p><a href="mailto:jules.mesnil@gmail.com" target="_blank" rel="noopener" class="contact-link">Email</a>
+                    | <a href="https://www.linkedin.com/in/jules-mesnil/" target="_blank" rel="noopener"
+                        class="contact-link">Linkedin</a> </p>
+            </div>
+        </div>
+    </section>
+    <script src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
