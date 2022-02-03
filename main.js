@@ -17,6 +17,8 @@ let navLink2 = document.querySelector(".nav-link-2");
 let navLink3 = document.querySelector(".nav-link-3");
 let language = document.querySelector(".language");
 let logoMenu = document.querySelector("#logo_menu");
+let lastWork1 = document.querySelector(".latest-work-1");
+let lastWork2 = document.querySelector(".latest-work-2");
 
 //Tab bar
 let nav = document.querySelector(".nav");
@@ -483,6 +485,31 @@ navLink2.addEventListener("click", () => {
 //Ferme le menu
 navLink3.addEventListener("click", () => {
     sidebar.classList.toggle("open");
+    menuBtnChange();
+});
+
+//Ferme le menu
+lastWork1.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    left2.style.left = "0";
+    right2.style.right = "0";
+    containerWorks.style.zIndex = "8";
+    containerDescWorks.style.zIndex = "10";
+    pd2.style.zIndex = "1";
+    html.style.overflowY = "hidden";
+    menuBtnChange();
+
+});
+
+//Ferme le menu
+lastWork2.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    left3.style.left = "0";
+    right3.style.right = "0";
+    containerWorks.style.zIndex = "8";
+    containerDescWorks.style.zIndex = "10";
+    pd3.style.zIndex = "1";
+    html.style.overflowY = "hidden";
     menuBtnChange();
 });
 
